@@ -1,3 +1,39 @@
-.btn-rounded{
-    border-radius: 50% !important;
+body {
+    font-family: ProximaNova,Arial,Sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #757575;
+    background-color: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.margin{
+    margin-right:20px; padding: 4px 4px;
+    
+}
+.margin a{
+    font-size: 11px;
+   
+}
+.pembungkus {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .my-custom-container{
+        width:600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .my-custom-container{
+        width:720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .my-custom-container{
+        width:900px;
+    }
 }
