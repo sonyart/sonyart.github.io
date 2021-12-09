@@ -25,13 +25,13 @@
           <div class="collapse navbar-collapse teks" id="navbarScroll" >
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;margin-left: 2rem;">
               <li class="nav-item margin" style="margin-right:20px; padding: 4px 4px;">
-                <a class="nav-link text-uppercase" aria-current="page" href="index.html">home</a>
+                <a class="nav-link text-uppercase active" aria-current="page" href="index.html">home</a>
               </li>
               <li class="nav-item margin">
                 <a class="nav-link text-uppercase " href="biodata.html" >biodata</a>
               </li>
               <li class="nav-item margin">
-                <a class="nav-link text-uppercase  active " aria-current="page" href="contactUs.html" >contact us</a>
+                <a class="nav-link text-uppercase " aria-current="page" href="contactUs.html" >contact us</a>
               </li>
               <li class="nav-item margin">
                 <a class="nav-link text-uppercase" href="foto.html" >foto</a>
@@ -57,27 +57,70 @@
         </div>
       </nav>
 
-      <!-- membuat footernya -->
-      <div class="container">
-        <div class="row "style="color:#424242;">
-          <div class="col-md-3" style="padding:0px;">
-            <h3 class="text-uppercase" style="font-size: 18px;"><strong> mari tetap terhubung</strong></h3>
-            <p style="font-size: 12px;"> Dapatkan Update promo, diskon, dan lain-lain</p>
-          </div>
-          <div class="col-md-4" style="padding:0px;">
-            <input id="J_emailInput" type="text" name="email" placeholder="Masukkan alamat email >" style="color:#424242;">
-          </div>
-          <div class="col-md-2" style="padding:0px;">
-              <h3 class="text-uppercase" style="font-size: 18px;"><strong>ikuti mi</strong></h3>
-              <p style="font-size: 12px;">kita mau dengar kabar kamu!</p>
-          </div>
-          <div class="col-md-3 d-flex align-items-center" style="padding:0px;">
-            <i class="fa fa-facebook" aria-hidden="true" style="width: 18px; height: 18px; color:#424242; margin-left: 1rem;"></i>
-            <i class="fa fa-instagram" aria-hidden="true"style="width: 18px; height: 18px; color:#424242; margin-left:1rem;"></i>
-            <i class="fa fa-twitter" aria-hidden="true"style="width: 18px; height: 18px; color:#424242; margin-left:1rem;"></i>
-          </div>
+      <form action="www.php/" style="width: 75%;">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingNama" placeholder="Wahidin">
+          <label for="floatingNama">Nama Lengkap</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingNamaPeng" placeholder="Wahidin eeee">
+          <label for="floatingNamaPeng">User Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-group">
+          <label >Jenis Kelamin</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="lelaki">
+          <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Perempuan">
+          <label class="form-check-label" for="inlineRadio2">Perempuan</label>
         </div>
       </div>
+
+      <div class="form-floating mt-3">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option selected>Pilih Agama Anda</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Islam">Islam</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Budha">Budha</option>
+          <option value="Konghucu">Konghucu</option>
+        </select>
+        <label for="floatingSelect">AGAMA</label>
+      </div>
+
+        <div class="form-floating mt-3">
+          <textarea class="form-control" placeholder="Leave your address here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Alamat</label>
+        </div>
+
+        <div class="form-group mt-3" style="height: 1rem;">
+          <label >Hobby</label><br>
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="memasak">
+          <label class="form-check-label" for="inlineCheckbox1">Memasak</label>
+        </div>
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Menonton">
+          <label class="form-check-label" for="inlineCheckbox2">Menonton</label>
+        </div>
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Belajar">
+          <label class="form-check-label" for="inlineCheckbox2">Belajar</label>
+        </div>
+        </div>
+
+        <button type="submit" class="btn btn-secondary mt-3" style="width:100%;">Submit</button>
+      </form>
 
       
       <!-- footer -->
